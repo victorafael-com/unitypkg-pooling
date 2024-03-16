@@ -1,0 +1,10 @@
+{
+  "name": "victorafael.pooling",
+  "version": "1.0.0",
+  "displayName": "Pooling System",
+  "description": "Pooling System for memory optimization on spawning assets",
+  "author": {
+    "name": "Victor Rafael",
+    "email": "vrnsantos@gmail.com"
+  }
+}
