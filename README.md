@@ -78,7 +78,7 @@ public class Missile : PooledObject
     void OnColliderEnter(Collider other)
     {
         //creates a explosion at missile position
-        explosionPool.Take<Explosion>(transform.position, Quaternion.identity);
+        explosionPool.Take<GameObject>(transform.position, Quaternion.identity);
         //returns the missle to the pool. Similar to Destroy(gameObject);
         PoolManager.Return(this);
     }
