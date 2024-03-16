@@ -33,16 +33,16 @@ Increment Size | How many items are added to the pool when there's no more items
 Instead of referencing a prefab, you must reference the Pooled Object Data:
 
 ```cpp
-// public GameObject bulletPrefab;
-public PooledObjectData bulletPool;
+// public GameObject missilePrefab;
+public PooledObjectData missilePool;
 
 {...}
 
-//Bullet extends PooledObject
-public Bullet SpawnBullet(){
-    // var go = Instantiate<GameObject>(bulletPrefab);
-    // return go.GetComponent<Bullet>();
-    return bulletPool.Take<Bullet>();
+//Missile extends PooledObject (see below)
+public Missile SpawnMissile(){
+    // var go = Instantiate<GameObject>(missilePrefab);
+    // return go.GetComponent<Missile>();
+    return missilePool.Take<Missile>(transform.position, transform.forward);
 }
 ```
 
