@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace com.victorafael.pool
 {
-	[CreateAssetMenu(fileName = "Pooled Object", menuName = "Pooled Object Data")]
 	public class PooledObjectData : ScriptableObject
 	{
 		[SerializeField] internal GameObject prefab;

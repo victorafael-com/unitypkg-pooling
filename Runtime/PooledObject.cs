@@ -32,6 +32,14 @@ namespace com.victorafael.pool
 		}
 
 		/// <summary>
+		/// Returns self to the PoolManager (Useful from caling from UnityEvents)
+		/// </summary>
+		public virtual void ReturnToPool()
+		{
+			PoolManager.Return(this);
+		}
+
+		/// <summary>
 		/// Called when the object is returned to the pool.
 		/// </summary>
 		public virtual void OnReturn()
