@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class CreatePooledObjectData
 {
-    [MenuItem("Assets/Create/Pooled Object Data")]
+    [MenuItem("Assets/Create/Pooled Objects/Data")]
     public static void Create()
     {
         GameObject selectedPrefab = null;

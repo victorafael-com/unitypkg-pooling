@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace com.victorafael.pool
 {
-	public class PooledObjectData : ScriptableObject
+	public class PooledObjectData : ScriptableObject, IEquatable<PooledObjectData>
 	{
 		[SerializeField] internal GameObject prefab;
 		[SerializeField] internal int poolSize;
@@ -71,6 +72,11 @@ namespace com.victorafael.pool
 			t.transform.position = position;
 			t.transform.rotation = rotation;
 			return t;
+		}
+
+		public bool Equals(PooledObjectData other)
+		{
+			return this == other;
 		}
 	}
 }
