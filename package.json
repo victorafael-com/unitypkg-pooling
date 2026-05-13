@@ -1,6 +1,6 @@
 {
   "name": "victorafael.pooling",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Pooling System",
   "description": "Pooling System for memory optimization on spawning assets",
   "author": {
